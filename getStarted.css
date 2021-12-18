@@ -1,0 +1,128 @@
+.getStarted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.getStartedHeading{
+    font-size: calc( 19px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    margin-top: 0;
+}
+.caption{
+    font-size: calc( 13px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    color: #ccc;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.startedBtn{
+font-size: calc( 13px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+   display: inline-block;
+   width:fit-content ;
+   border-radius: 4px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 12px;
+   padding-right: 12px;
+   border: 1px solid #004687;
+   background-color: #004687;
+   color: white;
+}
+
+.social{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 27px;
+}
+.overlay{
+    z-index: -1;
+}
+
+.pStarted{
+    font-size: calc( 13px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+.headingLorem{
+    font-size: calc( 19px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+.textLorem{
+    font-size: calc( 14px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+.overlay img{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    text-align:center;
+    display:block;
+    margin:auto;
+}
+.original{
+    position: absolute;
+    padding: 10px;
+    z-index: 9;
+}
+.lorem{
+    margin-top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 80%;
+    
+  
+}
+.lorem2{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faicons{
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .getStartedHeading{
+        margin-top: 10px;
+    }
+    .overlay img{
+        width: 50%;
+        height: 100%;
+        border-radius: 5px;
+        text-align:left;
+        display:block;
+        float: left;
+        margin-left: 20px;
+    }
+    .lorem{
+        float: right;
+        width: 60%;
+        margin-top: -6px;
+        margin-right: -40px ;
+        margin-left: 20px;
+    }
+    .lorem2{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: 16px;
+        padding: 5px;
+    }
+    .pStarted{
+        font-size: calc( 2px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    }
+    .headingLorem{
+        font-size: calc( 12px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    }
+    .textLorem{
+        font-size: calc( 2px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    }
+
+  }

@@ -1,0 +1,34 @@
+.featureSection{
+    margin-top: 200px;
+    background-color: #004687;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured{
+    font-size: calc( 12px + (17 - 12) * (100vw - 400px) / (800 - 400) );
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.featured img{
+    width: 40px;
+    border-radius: 50px;
+    display: block;
+    margin:auto;
+}
+.people{
+    padding:10px;
+}
+
+.headingFeature{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 10px;
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}

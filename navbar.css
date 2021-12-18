@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+  }
+  
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+    .logo{
+      font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+      text-align: center;
+      margin-top: 15px;
+    }
+    .searchLogo{
+      font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+      margin-right: 2px;
+      float: right;
+      margin-top: -15%;
+    }
+  }
+
+  @media screen and (max-width: 230px) {
+    .searchLogo{
+      font-size: calc( 8px + (20 - 12) * (100vw - 400px) / (800 - 400) );
+      margin-right: 2px;
+      float: right;
+      margin-top: -25%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 10%;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .logo{
+      position: absolute;
+      float: left;
+      font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .topnav{
+     display: flex;
+    }
+    .navItems{
+      align-items: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .searchLogo{
+      align-items: flex-end;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
